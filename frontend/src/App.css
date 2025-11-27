@@ -1,0 +1,151 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.card {
+  background: #1a1a1a;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 600px;
+}
+
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.stat-item {
+  background: #2a2a2a;
+  padding: 1rem;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.stat-item h3 {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.stat-value {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.mode-value {
+  font-size: 1.2rem;
+  color: #60a5fa;
+}
+
+.status-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.status-badge.running {
+  background: #059669;
+  color: #fff;
+}
+
+.status-badge.stopped {
+  background: #dc2626;
+  color: #fff;
+}
+
+.controls-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.mode-toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mode-toggle label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  user-select: none;
+  color: #e5e5e5;
+}
+
+.mode-toggle input {
+  width: 1.2rem;
+  height: 1.2rem;
+  cursor: pointer;
+}
+
+.controls {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.btn {
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  border: 1px solid transparent;
+  border-radius: 8px;
+}
+
+.start-btn {
+  background-color: #059669;
+  color: white;
+}
+
+.start-btn:hover {
+  background-color: #047857;
+}
+
+.stop-btn {
+  background-color: #dc2626;
+  color: white;
+}
+
+.stop-btn:hover {
+  background-color: #b91c1c;
+}
+
+.download-btn {
+  background-color: #2563eb;
+  color: white;
+}
+
+.download-btn:hover {
+  background-color: #1d4ed8;
+}
+
+button:disabled,
+input:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
